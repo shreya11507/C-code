@@ -1,0 +1,25 @@
+#include<stdio.h>
+int main()
+{
+int num,rem,min=9,max=0,range;
+printf("Enter number:");
+scanf("%d",&num);
+while(num!=0)
+{
+   rem=num%10;
+if(rem < min)
+{
+   min=rem ;
+}
+if(rem > max)
+{
+    max=rem;
+}
+num=num/10;
+}
+printf("\nThe smallest number is %d",min);
+printf("\nThe biggest number is %d",max);
+range=max-min;
+printf("\nRange:%d",range);
+return 0;
+}
