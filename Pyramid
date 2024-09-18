@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main()
+{
+  int r,s,n,count=1;
+  printf("Enter n:",n);
+  scanf("%d",&n);
+  for(r=1;r<=n;r++)
+  {
+      for(s=1;s<=n-r;s++)
+      {
+          printf("\t");
+      }
+      for(count=1;count<=r;count++)
+      {
+          printf("%d\t\t",count);
+      }
+       printf("\n");
+  }
+    return 0;
+}
