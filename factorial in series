@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main()
+{
+int n,j;
+float i,fact,sum=0;
+printf("Enter n:");
+scanf("%d",&n);
+for(i=1;i<=n;i++)
+{
+    fact=1;
+for(j=1;j<=i;j++)
+{
+fact=fact*j;
+}
+sum=sum+(float)i/fact;
+}
+printf("%2f",sum);
+return 0;
+}
