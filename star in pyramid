@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() 
+{
+    int i=1,j,sp,n;
+    printf("Enter no of rows:");
+    scanf("%d",&n);
+    while(i<=n)
+    {
+        sp=1,j=1;
+        while(sp<=n-i)
+        {
+            printf("\t",sp++);
+        }
+       while(j<=i)
+       {
+           printf("*\t\t",j++);
+       }
+       printf("\n",i++);
+    }
+    return 0;
+}
