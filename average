@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main()
+{
+    int score[10],sum=0;
+    int i;
+    float avg;
+    printf("Enter elements of array:");
+    for(i=0;i<10;i++)
+    {
+        sum=0;
+        scanf("%d",&score[i]);
+        sum=sum+score[i];
+    }
+    avg=(float)sum/10;
+    printf("%f",avg);
+    return 0;
+}
