@@ -1,20 +1,19 @@
 #include <stdio.h>
 int main() 
 {
-   int num,i;
+   int num,i,count=0;
    printf("Enter number:");
    scanf("%d",&num);
-   for(i=2;i<num;i++)
+   for(i=2;i<num/2;i++)
    {
-       if(num%i == 0)
-       {
-         printf("%d is a Composite number",num);
-         break;
-       }
+       if(num%i != 0)
+      continue;
        else
+       {
        printf("%d is a Prime number",num);
        break;
-   }
-
-    return 0;
+       }
+if(count == 0)
+printf("%d is not a primenumber",num);
+return 0;
 }
