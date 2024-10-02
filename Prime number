@@ -11,11 +11,11 @@ int main()
        else
        {
        count=1;
-       printf("%d is a Prime number",num);
+       printf("%d is not a Prime number",num);
        break;
        }
    }
    if(count == 0)
-   printf("%d is not a primenumber",num);
+   printf("%d is a primenumber",num);
    return 0;
 }
