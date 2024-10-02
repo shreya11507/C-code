@@ -10,6 +10,7 @@ int main()
       continue;
        else
        {
+       count=1;
        printf("%d is a Prime number",num);
        break;
        }
