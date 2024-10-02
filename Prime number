@@ -13,7 +13,8 @@ int main()
        printf("%d is a Prime number",num);
        break;
        }
-if(count == 0)
-printf("%d is not a primenumber",num);
-return 0;
+   }
+   if(count == 0)
+   printf("%d is not a primenumber",num);
+   return 0;
 }
