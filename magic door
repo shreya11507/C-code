@@ -1,0 +1,17 @@
+#include<stdio.h>
+ int main()
+ {
+ int a,b,c,result,code=1234;
+ printf("Enter three nos:");
+ scanf("%d %d %d",&a,&b,&c);
+ if(a>b&&a>c)
+    result=b+c;
+ else if(b>a&&b>c)
+    result=a+c;
+ else
+    result=a+b;
+ if(code==result)
+ printf("The door opens");
+ else
+    printf("Try again");
+ }
