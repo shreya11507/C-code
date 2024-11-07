@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main()
+{
+    int num,i,sum=0,fact=1,rem,org;
+    printf("Enter number:");
+    scanf("%d",&num);
+    org=num;
+    while(num!=0)
+        {fact=1;
+         rem=num%10;
+        for(i=1;i<=rem;i++)
+        {
+            fact=fact*i;
+        }
+        sum+=fact;
+        num=num/10;
+        }
+    if(org==sum)
+    printf("\n %d is a strong number",org);
+    else
+    printf("\n %d not a strong number",org);
+    
+}
